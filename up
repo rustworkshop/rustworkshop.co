@@ -1,0 +1,6 @@
+#!/bin/sh -v
+(
+	while ! nc -z localhost 4000; do sleep 0.1; done # https://stackoverflow.com/questions/27599839/how-to-wait-for-an-open-port-with-netcat
+	xdg-open http://localhost:4000/
+) &
+bundle exec jekyll s --livereload $@
