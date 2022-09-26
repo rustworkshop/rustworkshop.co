@@ -10,16 +10,16 @@ description: "A Specialist Rust Development Shop"
 # Team names, titles and social links
 people:
 - name: Tim Abell
-  pic: 1
+  pic: tim
   position: Founder
   social:
     - title: twitter
-      url: tim_abell
-    - title: facebook
-      url: #
+      url: https://twitter.com/tim_abell
     - title: stack-overflow
-      url: #
-
+      url: https://stackoverflow.com/users/10245/tim-abell
+- name: Privacy Loving Coder
+  pic: farhan-visuals-pVdnlXajLqQ-unsplash
+  position: Rust Engineer
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
