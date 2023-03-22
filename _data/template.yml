@@ -4,6 +4,7 @@ color:
   secondary: ae5065   
   secondary-dark: 333
   muted: 777
+  inverted: eee
 
 # Font Families
 font:

@@ -18,6 +18,10 @@ body {
     color: #{{ site.data.template.color.primary }};
 }
 
+.text-inverted {
+    color: #{{ site.data.template.color.inverted }};
+}
+
 p {
     font-size: 14px;
     line-height: 1.75;
