@@ -17,9 +17,17 @@ people:
       url: https://twitter.com/tim_abell
     - title: stack-overflow
       url: https://stackoverflow.com/users/10245/tim-abell
-- name: Privacy Loving Coder
-  pic: farhan-visuals-pVdnlXajLqQ-unsplash
+    - title: github
+      url: https://github.com/timabell
+- name: Luxagen
+  pic: luxagen
   position: Rust Engineer
+  social:
+    - title: github
+      url: https://github.com/luxagen
+- name: You?
+  position: Join our growing team
+  pic: farhan-visuals-pVdnlXajLqQ-unsplash
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 #social:
