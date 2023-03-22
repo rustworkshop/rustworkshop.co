@@ -9,7 +9,7 @@ description: "A Specialist Rust Development Shop"
 
 # Team names, titles and social links
 people:
-- pic: tim
+- pic: tim.jpg
   name: Tim Abell
   position: Founder
   bio: 20+ years of professional coding & contracting | delivered many projects in many technologies | entrepreneur | mentor | communicator | endless nerd | loves to talk about technology and business
@@ -20,14 +20,14 @@ people:
       url: https://stackoverflow.com/users/10245/tim-abell
     - title: github
       url: https://github.com/timabell
-- pic: luxagen
+- pic: luxagen.png
   name: Luxagen
   position: Rust Engineer
   bio: 20+ years experience of delivering software | expert C++ programmer | musician | rust programmer
   social:
     - title: github
       url: https://github.com/luxagen
-- pic: farhan-visuals-pVdnlXajLqQ-unsplash
+- pic: felicity-lynn-g_CYfjiaZZY-unsplash.jpg
   name: You?
   position: Join our growing team
   bio: We're always on the look out for great people to join our ambitious and growing software consultancy. Use the contact button to start the conversation.
