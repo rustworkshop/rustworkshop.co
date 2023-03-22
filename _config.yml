@@ -22,9 +22,9 @@ people:
   position: Rust Engineer
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: github
-    url: https://github.com/rustworkshop
+#social:
+#  - title: github
+#    url: https://github.com/rustworkshop
 
 # Postal address (add as many lines as necessary)
 address:
