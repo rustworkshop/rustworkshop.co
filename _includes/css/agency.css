@@ -381,6 +381,19 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+#services .service {
+    padding: 40px;
+}
+
+#services .service p {
+    text-align: justify;
+}
+
+
+#services .services-heading {
+    margin-bottom: 20px;
+}
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
