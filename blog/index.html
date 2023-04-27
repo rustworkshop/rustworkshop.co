@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% assign excerpt_limit = 3 %}
+
+<div class="posts">
+  {% for post in site.posts limit:excerpt_limit %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div>
+        <div class="post_date">{{ post.date | date: "%B %e, %Y" }}</div>
+        {% assign words=post.content %}
+        {% include calc-reading-time.html %}
+        <div class="reading_time" title="{{num_words}} words">{{reading_time}}</div>
+     </div>
+
+      <div class="entry">
+        {{ post.content | markdownify | strip_html | truncatewords: 50 }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+
+  <h1>Older posts</h1>
+  {% for post in site.posts offset:excerpt_limit %}
+    {% assign words=post.content %}
+    {% include calc-reading-time.html %}
+    <div>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br/>
+        <span class="post_date">{{ post.date | date: "%B %e, %Y" }}</span>
+        <span class="reading_time" title="{{num_words}} words">({{reading_time}})</p>
+    </div>
+  {% endfor %}
+</div>

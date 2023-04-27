@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<article class="post detailed">
+  <h1>{{ page.title }}</h1>
+
+  <div>
+    <p class="author_title">{{ page.date | date: "%B %e, %Y" }}</p>
+    {% if page.last_modified_at %}
+    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+    {% endif %}
+
+    {% assign words=page.content %}
+    {% include calc-reading-time.html %}
+    <p class="reading_time" title="{{num_words}} words">{{reading_time}}</p>
+
+    <div class="post-tags">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+    
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <hr/>
+	<div id="post_footer">
+		<div>
+				<a href='http://twitter.com/share?text=Read this: "{{ page.title | url_encode }}" by @{{
+					site.footer-links.twitter }}&url={{site.url}}{{page.url}}'
+					target='_blank'>Share as Tweet</a>
+				||
+				 <a target='_blank'
+					 href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{ page.title }}">
+				Share on LinkedIn</a>
+		</div>
+		<div>
+			<a href="https://github.com/timabell/timwise.co.uk/blob/master/{{ page.path }}"
+													target="_blank">Post source code on GitHub</a>
+			- suggestions &amp; PRs welcome!
+		</div>
+	</div>
+
+</article>

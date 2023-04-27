@@ -2,19 +2,17 @@
 layout: default
 ---
 
-<div class="home">
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Rust software engineering for your business.</div>
+            <div class="intro-heading">Hard won engineering greatness</div>
+            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+        </div>
+    </div>
+</header>
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+{% include services.html %}
+{% include team.html %}
+{% include contact.html %}
+{% include footer.html %}
