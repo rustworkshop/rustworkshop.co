@@ -376,20 +376,24 @@ section h3.section-subheading {
     }
 }
 
+.blog-heading,
 .service-heading {
     margin: 15px 0;
     text-transform: none;
 }
 
+#blog .blog,
 #services .service {
     padding: 40px;
 }
 
+#blog .blog p,
 #services .service p {
     text-align: justify;
 }
 
 
+#blog .blog-heading,
 #services .services-heading {
     margin-bottom: 20px;
 }

@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+<article class="post detailed">
+  <h2 class="blog-heading">{{ page.title }}</h2>
+
+  <div>
+    <p class="text-muted">
+      <span class="author_title">{{ page.date | date: "%B %e, %Y" }}</span>
+      {% if page.last_modified_at %}
+      <span class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</span>
+      {% endif %}
+      |
+      <span class="author">{{page.author}}</span>
+      |
+      {% assign words=page.content %}
+      {% include calc-reading-time.html %}
+      <span class="reading_time" title="{{num_words}} words">{{reading_time}}</span>
+    </p>
+
+    <div class="post-tags">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+    
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <hr/>
+	<div id="post_footer">
+		<div>
+				<a href='http://twitter.com/share?text=Read this: "{{ page.title | url_encode }}"&url={{site.url}}{{page.url}}'
+					target='_blank'>Share as Tweet</a>
+				||
+				 <a target='_blank'
+					 href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{ page.title }}">
+				Share on LinkedIn</a>
+		</div>
+		<div>
+			<a href="https://github.com/rustworkshop/rustworkshop.co/tree/gh-pages/{{ page.path }}"
+													target="_blank">Post source code on GitHub</a>
+			- suggestions &amp; PRs welcome!
+		</div>
+	</div>
+
+</article>
+            </div>
+        </div>
+    </section>
+<section>
