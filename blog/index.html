@@ -1,42 +1,31 @@
 ---
-layout: default
+layout: blog
 ---
 {% assign excerpt_limit = 3 %}
 
-    <section id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center blog-heading">
-                    <h2 class="section-heading"><small style="text-decoration: line-through;">Blog</small> Bliki</h2>
-                    <p class="section-subheading text-muted"><a href="https://www.martinfowler.com/bliki/WhatIsaBliki.html" target="_blank">Bliki</a> (noun): like a blog and wiki in one. Posts in here will evolve over time.</p>
-                </div>
-            </div>
-            <div class="row text-center">
-                {% for post in site.posts limit:excerpt_limit %}
-                  {% include calc-reading-time.html %}
-                  {% assign words=post.content %}
-                  <article class="post">
-                    <div class="col-md-6 blog">
-                        <h4 class="blog-heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-                        <div class="text-muted entry">
-                          <span class="post_date">{{ post.date | date: "%B %e, %Y" }}</span>
-                          |
-                          <span class="author">{{post.author}}</span>
-                          |
-                          <span class="reading_time" title="{{num_words}} words">{{reading_time}}</span>
-                          <br>
-                          <br>
-                        </div>
-                        <p>
-                          {{ post.content | markdownify | strip_html | truncatewords: 50 }}
-                        </p>
-                        <p class="text-muted">
-                          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-                        </p>
-                    </div>
-                  </article>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-<section>
+<div class="row text-center">
+  {% for post in site.posts limit:excerpt_limit %}
+    {% include calc-reading-time.html %}
+    {% assign words=post.content %}
+    <article class="post">
+      <div class="col-md-6 blog">
+          <h4 class="blog-heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+          <div class="text-muted entry">
+            <span class="post_date">{{ post.date | date: "%B %e, %Y" }}</span>
+            |
+            <span class="author">{{post.author}}</span>
+            |
+            <span class="reading_time" title="{{num_words}} words">{{reading_time}}</span>
+            <br>
+            <br>
+          </div>
+          <p>
+            {{ post.content | markdownify | strip_html | truncatewords: 50 }}
+          </p>
+          <p class="text-muted">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          </p>
+      </div>
+    </article>
+  {% endfor %}
+</div>
