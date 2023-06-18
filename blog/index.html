@@ -1,10 +1,8 @@
 ---
 layout: blog
 ---
-{% assign excerpt_limit = 3 %}
-
 <div class="row text-center">
-  {% for post in site.posts limit:excerpt_limit %}
+  {% for post in site.posts %}
     {% include calc-reading-time.html %}
     {% assign words=post.content %}
     <article class="post">
