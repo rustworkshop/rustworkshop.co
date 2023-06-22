@@ -50,6 +50,7 @@ I was about to buy a book on Rust, then I wondered what other books there were, 
 - [Hands-On Functional Programming in Rust](https://www.amazon.co.uk/Hands-Functional-Programming-Rust-applications/dp/1788839358) by Andrew Johnson
 - [Practical Rust 1.x Cookbook](https://www.amazon.co.uk/Practical-Rust-1-x-Cookbook-Microservices/dp/819622852X) by Rustacean Team
 - [Practical Rust Projects](https://www.amazon.co.uk/Practical-Rust-Projects-Serverless-Applications/dp/1484293304) by Shing Lyu
+- [Refactoring to Rust](https://lilymara.xyz/posts/refactoring-to-rust/) by Lily Mara
 - [Rust Atomics and Locks: Low-Level Concurrency in Practice](https://www.amazon.co.uk/Rust-Atomics-Locks-Low-Level-Concurrency/dp/1098119444) by Mara Bos
 - [Rust Brain Teasers: Exercise Your Mind](https://www.amazon.co.uk/Rust-Brain-Teasers-Pragmatic-Programmers/dp/1680509179) by Herbert Wolverson
 - [Rust High Performance](https://www.amazon.co.uk/Rust-High-Performance-performance-applications/dp/178839948X) by Iban Eguia Moraza
