@@ -25,6 +25,17 @@ As I've joined the UK rust community it's not been super-clear to me how to join
 
 - Follow relevant people and orgs on twitter. I've made a list here: <https://twitter.com/i/lists/1651516734552121344/members>
 
+## Matrix
+
+I'd never heard of [matrix](https://matrix.org/), but apparently it's a decentralized chat thing;
+
+The rust embedded team hang out on matrix and you can find them here:
+
+- <https://github.com/rust-embedded/blog/issues/141>
+- <https://matrix.to/#/#rust-embedded:matrix.org>
+
+I took the default suggestion and signed up with <https://element.io/> using the web client.
+
 ## IRL Meetup
 
 - The London meetup: <https://www.meetup.com/rust-london-user-group/>
