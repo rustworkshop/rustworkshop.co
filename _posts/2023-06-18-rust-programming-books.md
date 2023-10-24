@@ -24,15 +24,16 @@ I was about to buy a book on Rust, then I wondered what other books there were, 
 - [Mastering Rust](https://www.amazon.co.uk/Mastering-Rust-memory-concurrency-features/dp/1789346576) by Rahul Sharma
 - [Programming Rust: Fast, Safe Systems Development](https://www.amazon.co.uk/Programming-Rust-Fast-Systems-Development/dp/1492052590) by Jim Blandy (O'Reilly)
 - [Programming with Rust](https://www.amazon.co.uk/Programming-Rust-Donis-Marshall/dp/0137889658) by Donis Marshall
-- [Rust Programming: 100 Interview Questions](https://www.amazon.co.uk/Rust-Programming-Interview-Questions-Advanced/dp/B0C527HJ3N) by X.Y. Wang
 - [Rust Crash Course](https://www.amazon.co.uk/Rust-Crash-Course-High-Performance-Next-Generation/dp/9355510950) by Abhishek Kumar
 - [Rust In Practice](https://www.amazon.co.uk/Rust-Practice-Programmers-Programs-Applications/dp/8196228503) by Rustacean Team
+- [Rust Programming By Example](https://www.amazon.co.uk/Rust-Programming-Example-concurrent-applications/dp/1788390636) by Guillaume Gomez
 - [Rust Programming Cookbook](https://www.amazon.co.uk/Rust-Programming-Cookbook-features-building/dp/1789530660) by Claus Matzinger
 - [Rust Programming Interview Prep](https://www.amazon.co.uk/Rust-Programming-Interview-Prep-Techniques/dp/B0BZFCV5ZD) by Byron Southard
 - [Rust Programming Interview Questions](https://www.amazon.co.uk/Programming-Interview-Questions-Aditya-Chatterjee/dp/B09S64XZ7J) by Aditya Chatterjee
 - [Rust Programming Language for Beginners](https://www.amazon.co.uk/Rust-Programming-Language-Beginners-High-Performance/dp/B0C6BT19VY) by Alex Klaus
 - [Rust Programming for Beginners Simplified Version](https://www.amazon.co.uk/Rust-Programming-Beginners-Simplified-Version/dp/B0C5YFKMQ6) by Arthur As
 - [Rust Programming for Beginners](https://www.amazon.co.uk/Rust-Programming-Beginners-Introduction-Hands/dp/B0987KT8Z4) by Nathan Metzler
+- [Rust Programming: 100 Interview Questions](https://www.amazon.co.uk/Rust-Programming-Interview-Questions-Advanced/dp/B0C527HJ3N) by X.Y. Wang
 - [Rust Programming](https://www.amazon.co.uk/RUST-PROGRAMMING-Programming-Development-Performance/dp/B0C87GP93X) by Ronald C. Sheffield
 - [Rust Quick Start Guide](https://www.amazon.co.uk/Rust-Quick-Start-Guide-programming/dp/1789616700) by Daniel Arbuckle
 - [Rust Quiz: Mastering the Basics and Beyond](https://www.amazon.co.uk/Rust-Quiz-Mastering-Basics-Beyond-ebook/dp/B0C36NS3WC) by Hùng Phan
@@ -61,7 +62,6 @@ I was about to buy a book on Rust, then I wondered what other books there were, 
 - [Hands-On Microservices with Rust](https://www.amazon.co.uk/Hands-Microservices-Rust-scalable-microservices/dp/1789342759) by Denis Kolodin
 - [Practical Rust Web Projects: Building Cloud and Web-Based Applications](https://www.amazon.co.uk/Practical-Rust-Web-Projects-Applications/dp/1484265882) by Shing Lyu
 - [Programming WebAssembly with Rust: Unified Development for Web, Mobile, and Embedded Applications](https://www.amazon.co.uk/Programming-WebAssembly-Rust-Kevin-Hoffman/dp/1680506366) by Kevin Hoffman
-- [Rust Programming By Example](https://www.amazon.co.uk/Rust-Programming-Example-concurrent-applications/dp/1788390636) by Guillaume Gomez
 - [Rust Web Development with Rocket](https://www.amazon.co.uk/Rust-Web-Development-Rocket-development/dp/180056130X) by Karuna Murti
 - [Rust Web Development: With Warp, Tokio, and Reqwest](https://www.amazon.co.uk/Rust-Web-Development-Bastian-Gruber/dp/1617299006) by Bastian Gruber
 - [Rust Web Programming](https://www.amazon.co.uk/Rust-Web-Programming-hands-applications/dp/1803234695) by Maxwell Flitton
