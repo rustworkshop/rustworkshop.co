@@ -21,6 +21,7 @@ Here's what I've learned so far about what's out there:
   - "*Lightweight, opinionated, curated, unofficial alternative to crates.io*".
   - it has a [list of http crates](https://lib.rs/web-programming/http-server) - the top four are axum, actix, warp and rocket
 - [Server framework benchmarks by techempower](https://www.techempower.com/benchmarks/#section=data-r22&hw=ph&test=plaintext)
+- [Rust Digger](https://rust-digger.code-maven.com/) via the [Rustacean Station Podcast - Rust Digger](https://rustacean-station.org/episode/gabor-szabo/)
 
 ## Backend
 
