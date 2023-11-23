@@ -28,15 +28,6 @@ As an aside there's a temptation to think `async` is a panacea for speed, but [a
 
 It seems that currently [tokio's async](https://tokio.rs/tokio/tutorial/async) is the defacto standard.
 
-## Resources
-
-- [The Rust Workshop survey of the available Rust books](/2023/06/18/rust-programming-books/)- [blessed.rs has a curated crate list](https://blessed.rs/crates#section-networking-subsection-http-foundations)
-- [lib.rs](https://lib.rs/crates) has useful stats on it, e.g. [the rocket crate page](https://lib.rs/crates/rocket) shows it's #5 (presumably by downloads)
-  - "*Lightweight, opinionated, curated, unofficial alternative to crates.io*".
-  - it has a [list of http crates](https://lib.rs/web-programming/http-server) - the top four are axum, actix, warp and rocket
-- [Server framework benchmarks by techempower](https://www.techempower.com/benchmarks/#section=data-r22&hw=ph&test=plaintext)
-- [Rust Digger](https://rust-digger.code-maven.com/) via the [Rustacean Station Podcast - Rust Digger](https://rustacean-station.org/episode/gabor-szabo/)
-
 ## Backend
 
 - [Axum by tokio](https://github.com/tokio-rs/axum) - recommended, part of tokio (the async framework of choice)
@@ -60,3 +51,12 @@ It seems that currently [tokio's async](https://tokio.rs/tokio/tutorial/async) i
 - [HTMX](https://htmx.org/) is a tiny javascript library for web interfaces, but not really anything to do with Rust
 - [Leptos](https://leptos.dev/) ...
   - [lib.rs - leptos](https://lib.rs/crates/leptos)
+
+## Further Resources
+
+- [The Rust Workshop survey of the available Rust books](/2023/06/18/rust-programming-books/)- [blessed.rs has a curated crate list](https://blessed.rs/crates#section-networking-subsection-http-foundations)
+- [lib.rs](https://lib.rs/crates) has useful stats on it, e.g. [the rocket crate page](https://lib.rs/crates/rocket) shows it's #5 (presumably by downloads)
+  - "*Lightweight, opinionated, curated, unofficial alternative to crates.io*".
+  - it has a [list of http crates](https://lib.rs/web-programming/http-server) - the top four are axum, actix, warp and rocket
+- [Server framework benchmarks by techempower](https://www.techempower.com/benchmarks/#section=data-r22&hw=ph&test=plaintext)
+- [Rust Digger](https://rust-digger.code-maven.com/) via the [Rustacean Station Podcast - Rust Digger](https://rustacean-station.org/episode/gabor-szabo/)
