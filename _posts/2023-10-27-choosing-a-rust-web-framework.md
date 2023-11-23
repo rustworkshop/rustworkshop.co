@@ -28,29 +28,40 @@ As an aside there's a temptation to think `async` is a panacea for speed, but [a
 
 It seems that currently [tokio's async](https://tokio.rs/tokio/tutorial/async) is the defacto standard.
 
-## Backend
+## Web & API frameworks & crates for the backend
+
+Here's the biggest frameworks / crates out there for doing server-side (aka backend) web development for both APIs and server-rendered html.
 
 - [Axum by tokio](https://github.com/tokio-rs/axum) - recommended, part of tokio (the async framework of choice)
-  - [lib.rs - axum](https://lib.rs/crates/axum)
+  - [axum on lib.rs](https://lib.rs/crates/axum)
 - [Actix](https://actix.rs/) - speedy(er?)
-  - [lib.rs - actix](https://lib.rs/crates/actix)
+  - [actix on lib.rs](https://lib.rs/crates/actix)
 - [Rocket](https://rocket.rs/) - inconsistent development & releases, but otherwise good and solid according to blessed.rs
-  - [lib.rs - salvo](https://lib.rs/crates/salvo)
+  - [salvo on lib.rs](https://lib.rs/crates/salvo)
 - [Salvo](https://salvo.rs/)
   - [PR for adding salvo to blessed.rs](https://github.com/nicoburns/blessed-rs/pull/81/files)
-  - [lib.rs - salvo](https://lib.rs/crates/salvo)
+  - [salvo on lib.rs](https://lib.rs/crates/salvo)
 - [Askama](https://djc.github.io/askama/) - a template engine
 - [Warp](https://crates.io/crates/warp)
-  - [lib.rs - warp](https://lib.rs/crates/warp)
+  - [warp on lib.rs](https://lib.rs/crates/warp)
   - <https://blog.logrocket.com/building-rest-api-rust-warp/>
   - Built on top of [hyper.rs](https://hyper.rs/)
     - Which is built on tokio (so uses tokio-async)
 
-## Frontend
+## Frontend - Javascript, Rust and WASM
 
-- [HTMX](https://htmx.org/) is a tiny javascript library for web interfaces, but not really anything to do with Rust
-- [Leptos](https://leptos.dev/) ...
-  - [lib.rs - leptos](https://lib.rs/crates/leptos)
+### Non-rust
+
+Even if your backend is Rust, you don't *have* to do the frontend in Rust too. I'm going to try for the edification, but for completeness here's some javascript tools you could use to build your html. Some of these were mentioned by folks when asked about web dev in Rust, some are just the big names out there.
+
+- [HTMX](https://htmx.org/) is a tiny javascript library for web interfaces, mentioned by a r/Rust reddit user as part of their stack.
+- React - the big one it seems - ["Should you use React in 2023?" from the LogRocket podcast](https://podrocket.logrocket.com/react-in-2023) gives a good overview of the current state of things
+- Angular - I really don't hear so much about this these days, and the big rewrite burned a lot of people.
+
+### Rust frontend systems
+
+- [Leptos](https://leptos.dev/)
+  - [leptos on lib.rs](https://lib.rs/crates/leptos)
 
 ## Further Resources
 
