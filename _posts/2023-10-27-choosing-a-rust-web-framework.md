@@ -47,6 +47,7 @@ Here's the biggest frameworks / crates out there for doing server-side (aka back
   - <https://blog.logrocket.com/building-rest-api-rust-warp/>
   - Built on top of [hyper.rs](https://hyper.rs/)
     - Which is built on tokio (so uses tokio-async)
+- [tide](https://github.com/http-rs/tide)
 
 ## Frontend - Javascript, Rust and WASM
 
@@ -74,7 +75,7 @@ Even if your backend is Rust, you don't *have* to do the frontend in Rust too. I
 - React - the big one it seems - ["Should you use React in 2023?" from the LogRocket podcast](https://podrocket.logrocket.com/react-in-2023) gives a good overview of the current state of things
 - Angular - I really don't hear so much about this these days, and the big rewrite burned a lot of people.
 
-There are many others
+There are many others, I'm not even going to attempt a complete survey of js things.
 
 ## Further Resources
 
@@ -84,3 +85,4 @@ There are many others
   - it has a [list of http crates](https://lib.rs/web-programming/http-server) - the top four are axum, actix, warp and rocket
 - [Server framework benchmarks by techempower](https://www.techempower.com/benchmarks/#section=data-r22&hw=ph&test=plaintext)
 - [Rust Digger](https://rust-digger.code-maven.com/) via the [Rustacean Station Podcast - Rust Digger](https://rustacean-station.org/episode/gabor-szabo/)
+- [Rust web frameworks: development in 2023 ~ Yalantis](https://yalantis.com/blog/rust-web-frameworks/)
