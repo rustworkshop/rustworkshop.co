@@ -10,7 +10,7 @@ I've already [surveyed the available Rust books](/2023/06/18/rust-programming-bo
 
 I started with a question on reddit: [r/rust "What's the current best practice for web dev in rust?"](https://www.reddit.com/r/rust/comments/17dt9bo/whats_the_current_best_practice_for_web_dev_in/) which flushed out some good advice and things to check out. I then followed up with some ~~googling~~ [DuckDuckGo](https://duckduckgo.com/)ing.
 
-I want to see just how far I can push the full-stack-Rust thing, so will avoid things like HTMX that are javascript based. I'll start with some old-school back-end development of a static website and then venture tentatively into fancier things (SPAs and Mobile apps) once that's working. As well as building something real and useful, the secondary objective is to develop an opinion for the Rust Workshop on what a good default Rust web stack would look like. (Opinions being like [standards](https://xkcd.com/927/) and frameworks, by surveying all the existing opinions and forming another, now there's just one more; but that doesn't change the fact that an opinion is needed here).
+I want to see just how far I can push the full-stack-Rust thing, so will avoid things like HTMX that are javascript based. I'll start with some old-school back-end development of a static website and then venture tentatively into fancier things (SPAs and Mobile apps) once that's working. As well as building something real and useful, the secondary objective is to develop an opinion for the Rust Workshop on what a good default Rust web stack would look like.
 
 Here's what I've learned so far about what's out there:
 
@@ -27,6 +27,8 @@ So worth at least trying to start in the "right" part of the `async` ecosystem.
 As an aside there's a temptation to think `async` is a panacea for speed, but [async doesn't solve every performance problem (tweet)](https://twitter.com/tim_abell/status/1725054318108197032). The main strength of async is in I/O blocked parallel operations, exactly the kind of thing webservers are (lots of waiting on disk and network while trying to serve thousands or millions of requests/clients in parallel).
 
 It seems that currently [tokio's async](https://tokio.rs/tokio/tutorial/async) is the defacto standard.
+
+- <https://bryangilbert.com/post/code/rust/adventures-futures-tokio-rust/>
 
 ## Web & API frameworks & crates for the backend
 
