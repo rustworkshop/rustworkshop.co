@@ -38,6 +38,7 @@ Here's the biggest frameworks / crates out there for doing server-side (aka back
   - [axum on lib.rs](https://lib.rs/crates/axum)
 - [Actix](https://actix.rs/) - speedy(er?)
   - [actix on lib.rs](https://lib.rs/crates/actix)
+  - [Rustacean Station: Kraken's migration to Rust microservices, with Rob Ede](https://rustacean-station.org/episode/rob-ede-kraken/)
 - [Rocket](https://rocket.rs/) - inconsistent development & releases, but otherwise good and solid according to blessed.rs
   - [salvo on lib.rs](https://lib.rs/crates/salvo)
 - [Salvo](https://salvo.rs/)
