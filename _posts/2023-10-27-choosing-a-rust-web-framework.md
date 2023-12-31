@@ -26,20 +26,29 @@ So worth at least trying to start in the "right" part of the `async` ecosystem.
 
 As an aside there's a temptation to think `async` is a panacea for speed, but [async doesn't solve every performance problem (tweet)](https://twitter.com/tim_abell/status/1725054318108197032). The main strength of async is in I/O blocked parallel operations, exactly the kind of thing webservers are (lots of waiting on disk and network while trying to serve thousands or millions of requests/clients in parallel).
 
-It seems that currently [tokio's async](https://tokio.rs/tokio/tutorial/async) is the defacto standard.
+### Async and Performance
 
-- <https://bryangilbert.com/post/code/rust/adventures-futures-tokio-rust/>
+Coming from C# where async is embedded in the language and standard "dotnet framework" libraries you don't really consider much whether to use async as it just infects everything you do. Here in rust there is more choice. It's worth noting that where async shines is in handling massive concurrent load on network servers where there's a lot of waiting on IO (disk/network). But for a lot of applications the concurrent load isn't the limiting factor so async is potentially unnecessary complexity.
+
+### Available async runtimes
+
+- [Tokio's async](https://tokio.rs/tokio/tutorial/async)
+  - some people find the 'static bound on tokio tasks to be restrictive: https://tokio.rs/tokio/tutorial/spawning  - TODO: research
+- async-std
+- embass
+- smol
+
 
 ## Web & API frameworks & crates for the backend
 
 Here's the biggest frameworks / crates out there for doing server-side (aka backend) web development for both APIs and server-rendered html.
 
-- [Axum by tokio](https://github.com/tokio-rs/axum) - recommended, part of tokio (the async framework of choice)
+- [Axum by tokio](https://github.com/tokio-rs/axum) - recommended, part of tokio (the async framework of choice) - focus on a macro free API which simplifies error handling and debugging
   - [axum on lib.rs](https://lib.rs/crates/axum)
-- [Actix](https://actix.rs/) - speedy(er?)
+- [Actix](https://actix.rs/) - uses macros for routing api and the actor pattern for internal communication. Considered to fast.
   - [actix on lib.rs](https://lib.rs/crates/actix)
   - [Rustacean Station: Kraken's migration to Rust microservices, with Rob Ede](https://rustacean-station.org/episode/rob-ede-kraken/)
-- [Rocket](https://rocket.rs/) - inconsistent development & releases, but otherwise good and solid according to blessed.rs
+- [Rocket](https://rocket.rs/) - inconsistent development & releases, but otherwise good and solid according to blessed.rs. Uses macros to routing api and general web boilerplate. A popular choice if you don't mind some magic happening behind the scenes. 
   - [salvo on lib.rs](https://lib.rs/crates/salvo)
 - [Salvo](https://salvo.rs/)
   - [PR for adding salvo to blessed.rs](https://github.com/nicoburns/blessed-rs/pull/81/files)
@@ -51,6 +60,8 @@ Here's the biggest frameworks / crates out there for doing server-side (aka back
   - Built on top of [hyper.rs](https://hyper.rs/)
     - Which is built on tokio (so uses tokio-async)
 - [tide](https://github.com/http-rs/tide)
+
+Your choice may be affected by how you feel about macros - do you want to avoid magic and trickier error messages that you may get with a macro based framework, or are you happy to just write your business logic and leave all that to the framework.
 
 ## Frontend - Javascript, Rust and WASM
 
@@ -89,3 +100,8 @@ There are many others, I'm not even going to attempt a complete survey of js thi
 - [Server framework benchmarks by techempower](https://www.techempower.com/benchmarks/#section=data-r22&hw=ph&test=plaintext)
 - [Rust Digger](https://rust-digger.code-maven.com/) via the [Rustacean Station Podcast - Rust Digger](https://rustacean-station.org/episode/gabor-szabo/)
 - [Rust web frameworks: development in 2023 ~ Yalantis](https://yalantis.com/blog/rust-web-frameworks/)
+- Old article on async - much has changed since: <https://bryangilbert.com/post/code/rust/adventures-futures-tokio-rust/>
+
+## Thanks
+
+Many thanks to David Haig for early review and significant contributions to this article.
