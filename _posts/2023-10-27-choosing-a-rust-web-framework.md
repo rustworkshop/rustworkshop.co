@@ -41,27 +41,36 @@ Coming from C# where async is embedded in the language and standard "dotnet fram
 
 ## Web & API frameworks & crates for the backend
 
+### Frameworks
+
 Here's the biggest frameworks / crates out there for doing server-side (aka backend) web development for both APIs and server-rendered html.
 
 - [Axum by tokio](https://github.com/tokio-rs/axum) - recommended, part of tokio (the async framework of choice) - focus on a macro free API which simplifies error handling and debugging
   - [axum on lib.rs](https://lib.rs/crates/axum)
-- [Actix](https://actix.rs/) - uses macros for routing api and the actor pattern for internal communication. Considered to fast.
+- [Actix](https://actix.rs/) - uses macros for routing api and the actor pattern for internal communication. Considered fast.
   - [actix on lib.rs](https://lib.rs/crates/actix)
   - [Rustacean Station: Kraken's migration to Rust microservices, with Rob Ede](https://rustacean-station.org/episode/rob-ede-kraken/)
 - [Rocket](https://rocket.rs/) - inconsistent development & releases, but otherwise good and solid according to blessed.rs. Uses macros to routing api and general web boilerplate. A popular choice if you don't mind some magic happening behind the scenes. 
-  - [salvo on lib.rs](https://lib.rs/crates/salvo)
+  - [rocket on lib.rs](https://lib.rs/crates/rocket)
 - [Salvo](https://salvo.rs/)
   - [PR for adding salvo to blessed.rs](https://github.com/nicoburns/blessed-rs/pull/81/files)
   - [salvo on lib.rs](https://lib.rs/crates/salvo)
-- [Askama](https://djc.github.io/askama/) - a template engine
 - [Warp](https://crates.io/crates/warp)
   - [warp on lib.rs](https://lib.rs/crates/warp)
   - <https://blog.logrocket.com/building-rest-api-rust-warp/>
   - Built on top of [hyper.rs](https://hyper.rs/)
     - Which is built on tokio (so uses tokio-async)
 - [tide](https://github.com/http-rs/tide)
+  - [tide on lib.rs](https://lib.rs/crates/tide)
 
 Your choice may be affected by how you feel about macros - do you want to avoid magic and trickier error messages that you may get with a macro based framework, or are you happy to just write your business logic and leave all that to the framework.
+
+### Templating engines
+
+One piece of the puzzle
+
+- [Askama](https://djc.github.io/askama/) - a template engine based on Jinja
+  - [askama on lib.rs](https://lib.rs/crates/askama)
 
 ## Frontend - Javascript, Rust and WASM
 
@@ -69,7 +78,7 @@ Frontend web is a complex world these days, and the ecosystem has exploded in th
 
 Particularly with bootstrapping on a budget we can iterate our way to fancier things, starting with simpler server-side html rendering ("SSR") and then graduating to complex systems as needs and resources dictate.
 
-There's some fundamental needs of web development that need to be kept in mind when choosing a system, and some of the choices you make up front can make it very hard to meet some of these needs as they become important for you later without a serious rewrite, so bear these in mind:
+There are some fundamental needs of web development that need to be kept in mind when choosing a system, and some of the choices you make up front can make it very hard to meet some of these needs as they become important for you later without a serious rewrite, so bear these in mind:
 
 1. Search engines - client-rendered html is often invisible to search engines which can be a massive problem, hence the rise of "isomorphic" and "hydration" approaches that, while complicated, allow the best of client and server worlds
 2. Dynamic, responsive user experiences - full server page rendering is easier to get started, but inevitably less responsive to the user than SPA designs that can minimize server round-trips and complete page re-renders. You can sprinkle a little ajax magic to selected parts of a server-rendered page, but a fully responsive web application is impossible to achieve with full page server rendering as a base without a major rewrite. Consider the balance of engineering cost and user experience, and the desired long term shape of your web site or web application.
@@ -88,8 +97,9 @@ Even if your backend is Rust, you don't *have* to do the frontend in Rust too. I
 - [HTMX](https://htmx.org/) is a tiny javascript library for web interfaces, mentioned by a r/Rust reddit user as part of their stack.
 - React - the big one it seems - ["Should you use React in 2023?" from the LogRocket podcast](https://podrocket.logrocket.com/react-in-2023) gives a good overview of the current state of things
 - Angular - I really don't hear so much about this these days, and the big rewrite burned a lot of people.
+- Vue.js
 
-There are many others, I'm not even going to attempt a complete survey of js things.
+There are many others, I'm not even going to attempt a complete survey of js things for the time being.
 
 ## Further Resources
 
