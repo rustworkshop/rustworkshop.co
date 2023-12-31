@@ -20,8 +20,10 @@ I was about to buy a book on Rust, then I wondered what other books there were, 
 - [Learn all about Rust Programming](https://www.amazon.co.uk/Learn-all-about-Rust-Programming/dp/B0C6BFKFMS) by Innoware PJP
 - [Learning Rust](https://www.amazon.co.uk/Learning-Rust-comprehensive-writing-applications/dp/1785884301) by Paul Johnson
 - [Mastering Rust: A Beginner's Guide](https://www.amazon.co.uk/Mastering-Rust-Beginners-Computer-Science/dp/1032319046) by Sufyan bin Uzayr
-- [Mastering Rust](https://www.amazon.co.uk/Mastering-Rust-Comprehensive-Guide-Programming-ebook/dp/B0C3Z8GBCB) by Shrikant Jadhav
-- [Mastering Rust](https://www.amazon.co.uk/Mastering-Rust-memory-concurrency-features/dp/1789346576) by Rahul Sharma
+- Mastering Rust by Shrikant Jadhav
+    - [Mastering Rust (first edition) by Shrikant Jadhav](https://www.amazon.co.uk/Mastering-Rust-Comprehensive-Guide-Programming-ebook/dp/B0C3Z8GBCB)
+    - [Mastering Rust: Second Edition - Advanced Concepts by Shrikant Jadhav](https://www.amazon.co.uk/dp/B0CNH838C3)
+- [Mastering Rust by Rahul Sharma & Vesa Kaihlavirta](https://www.amazon.co.uk/Mastering-Rust-memory-concurrency-features/dp/1789346576)
 - [Programming Rust: Fast, Safe Systems Development](https://www.amazon.co.uk/Programming-Rust-Fast-Systems-Development/dp/1492052590) by Jim Blandy (O'Reilly)
 - [Programming with Rust](https://www.amazon.co.uk/Programming-Rust-Donis-Marshall/dp/0137889658) by Donis Marshall
 - [Rust Crash Course](https://www.amazon.co.uk/Rust-Crash-Course-High-Performance-Next-Generation/dp/9355510950) by Abhishek Kumar
