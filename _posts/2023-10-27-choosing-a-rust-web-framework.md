@@ -33,10 +33,17 @@ Coming from C# where async is embedded in the language and standard "dotnet fram
 ### Available async runtimes
 
 - [Tokio's async](https://tokio.rs/tokio/tutorial/async)
-  - some people find the 'static bound on tokio tasks to be restrictive: https://tokio.rs/tokio/tutorial/spawning  - TODO: research
-- async-std
-- embass
-- smol
+  - some people find the `'static` lifetime bound on tokio tasks to be restrictive, or at least a bit tricky to use (though for writing an API the spawning is likely handled per-request by the framework so less of an issue):
+    - <https://tokio.rs/tokio/tutorial/spawning#static-bound>
+    - <https://stackoverflow.com/questions/69955340/how-to-deal-with-tokiospawn-closure-required-to-be-static-and-self>
+    - <https://github.com/tokio-rs/tokio/issues/2170>
+    - <https://users.rust-lang.org/t/working-around-the-static-requirement-in-tokio-spawn-blocking/89831>
+    - <https://users.rust-lang.org/t/satisfying-tokio-spawn-static-lifetime-requirement/78773>
+- [async-std](https://docs.rs/async-std/latest/async_std/) - "Async version of the Rust standard library" 
+- [embassy](https://embassy.dev/) - "Embassy is the next-generation framework for embedded applications"
+- [smol](https://github.com/smol-rs/smol) - "A small and fast async runtime."
+
+<https://rust-lang.github.io/async-book/>
 
 
 ## Web & API frameworks & crates for the backend
