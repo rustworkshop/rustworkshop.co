@@ -4,25 +4,27 @@ layout: post
 author: Tim Abell
 ---
 
-For my next side-project I'm going to do a small web based system (party invites), and unlike in dotnet and ruby on rails where there is ONE TRUE WAY™ to build web things there are several competing backend frameworks / crates for web backends in Rust, and even more front-end things (as always seems to be the way with front-end these days, especially now WASM has got serious).
 
-I've already [surveyed the available Rust books](/2023/06/18/rust-programming-books/), and figured out which ones are for web / api work, but not which ones use what frameworks.
+Unlike in dotnet and ruby on rails where there is ONE TRUE WAY™ to build web things there are several competing backend frameworks / crates for web backends in Rust, (and even more front-end things, especially now WASM is a serious option).
 
-I started with a question on reddit: [r/rust "What's the current best practice for web dev in rust?"](https://www.reddit.com/r/rust/comments/17dt9bo/whats_the_current_best_practice_for_web_dev_in/) which flushed out some good advice and things to check out. I then followed up with some ~~googling~~ [DuckDuckGo](https://duckduckgo.com/)ing.
+This post lays out the current lay of the land to help choose the right tool for the job.
 
-I want to see just how far I can push the full-stack-Rust thing, so will avoid things like HTMX that are javascript based. I'll start with some old-school back-end development of a static website and then venture tentatively into fancier things (SPAs and Mobile apps) once that's working. As well as building something real and useful, the secondary objective is to develop an opinion for the Rust Workshop on what a good default Rust web stack would look like.
+For more detail, there's the [survey of the available Rust books](/2023/06/18/rust-programming-books/), which categorises the ones that area specifically for web / api work.
 
-Here's what I've learned so far about what's out there:
+Asking ["What's the current best practice for web dev in rust? on reddit"](https://www.reddit.com/r/rust/comments/17dt9bo/whats_the_current_best_practice_for_web_dev_in/) flushed out some good advice and things to check out.
+
+As well as learning and sharing, this post is here to help develop an opinion for the Rust Workshop on what a good default would be for a web stack for teams that love Rust.
 
 ## Async
 
-Note that your crates need to use the same async approach / crate I gather otherwise all-hell / incompatibility will be upon you. (i.e. tokio all the things). Unlike in C# and many other languages, Rust doesn't force a particular async "runtime" on you (for better or worse), so you and the crates you depend on have to make your own informed choice.
+In Rust there are multiple implementations of the async language features, available as creates. As such your web framework and other crates that you use need to be compatible.
 
-The article ["Was Rust Worth It? From JavaScript to Rust, three years in" by Jarrod Overson](https://jsoverson.medium.com/was-rust-worth-it-f43d171fb1b3) shares that:
 
-> "After two decades of JavaScript and decent experience with Go, this is the most significant source of frustration and friction with Rust"
+> "After two decades of JavaScript and decent experience with Go, [async] is the most significant source of frustration and friction with Rust"
+>
+> ~ [Jarrod Overson, "Was Rust Worth It? From JavaScript to Rust, three years in"](https://jsoverson.medium.com/was-rust-worth-it-f43d171fb1b3#:~:text=this%20is%20the%20most%20significant%20source%20of%20frustration)
 
-So worth at least trying to start in the "right" part of the `async` ecosystem.
+So it's worth at least trying to start in the "right" part of the `async` ecosystem.
 
 As an aside there's a temptation to think `async` is a panacea for speed, but [async doesn't solve every performance problem (tweet)](https://twitter.com/tim_abell/status/1725054318108197032). The main strength of async is in I/O blocked parallel operations, exactly the kind of thing webservers are (lots of waiting on disk and network while trying to serve thousands or millions of requests/clients in parallel).
 
