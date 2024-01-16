@@ -5,37 +5,38 @@ author: Tim Abell
 ---
 
 
-Unlike in dotnet and ruby on rails where there is ONE TRUE WAY™ to build web things there are several competing backend frameworks / crates for web backends in Rust, (and even more front-end things, especially now WASM is a serious option).
+Unlike in dotnet and ruby on rails where there is more or less ONE TRUE WAY™ to build web things there are several competing backend frameworks / crates for web backends in Rust, And there are also even more choices for front-end things, especially now WASM is a serious option, especially if you consider the js ecosystem.
 
-This post lays out the current lay of the land to help choose the right tool for the job.
+This post lays out the current lay of the land to help choose the right tool for the job and propose a sensible default for the "average" API / Web project.
 
-For more detail, there's the [survey of the available Rust books](/2023/06/18/rust-programming-books/), which categorises the ones that area specifically for web / api work.
+For more detail, there's the [survey of the available Rust books](/2023/06/18/rust-programming-books/), which has a category specifically for web / api books.
 
-Asking ["What's the current best practice for web dev in rust? on reddit"](https://www.reddit.com/r/rust/comments/17dt9bo/whats_the_current_best_practice_for_web_dev_in/) flushed out some good advice and things to check out.
-
-As well as learning and sharing, this post is here to help develop an opinion for the Rust Workshop on what a good default would be for a web stack for teams that love Rust.
+Before we start looking at the actual web crates we need to talk a bit about async...
 
 ## Async
 
-In Rust there are multiple implementations of the async language features, available as creates. As such your web framework and other crates that you use need to be compatible.
+Unlike C# where async is out of the box batteries included, the Rust language provides some of the pieces, but to actually use async you'll need an "async runtime" crate. ([The rust book on async support](https://rust-lang.github.io/async-book/01_getting_started/03_state_of_async_rust.html#language-and-library-support).)
 
+In Rust there are multiple async runtime crates available. The crates that you are actually trying to use for your project might require a particular async runtime to work. As such your web framework and other crates that you use need to be compatible.
+
+The consequence of this is that your up-front choice of async runtime, or web framework which might in turn dictate a particular runtime, will likely be hard to change further down the road.
 
 > "After two decades of JavaScript and decent experience with Go, [async] is the most significant source of frustration and friction with Rust"
 >
 > ~ [Jarrod Overson, "Was Rust Worth It? From JavaScript to Rust, three years in"](https://jsoverson.medium.com/was-rust-worth-it-f43d171fb1b3#:~:text=this%20is%20the%20most%20significant%20source%20of%20frustration)
 
-So it's worth at least trying to start in the "right" part of the `async` ecosystem.
-
-As an aside there's a temptation to think `async` is a panacea for speed, but [async doesn't solve every performance problem (tweet)](https://twitter.com/tim_abell/status/1725054318108197032). The main strength of async is in I/O blocked parallel operations, exactly the kind of thing webservers are (lots of waiting on disk and network while trying to serve thousands or millions of requests/clients in parallel).
-
 ### Async and Performance
 
 Coming from C# where async is embedded in the language and standard "dotnet framework" libraries you don't really consider much whether to use async as it just infects everything you do. Here in rust there is more choice. It's worth noting that where async shines is in handling massive concurrent load on network servers where there's a lot of waiting on IO (disk/network). But for a lot of applications the concurrent load isn't the limiting factor so async is potentially unnecessary complexity.
 
-### Available async runtimes
+There's a temptation to think `async` is a panacea for speed, but [async doesn't solve every performance problem (tweet)](https://twitter.com/tim_abell/status/1725054318108197032). The main strength of async is in I/O blocked parallel operations, exactly the kind of thing webservers are (lots of waiting on disk and network while trying to serve thousands or millions of requests/clients in parallel).
 
-- [Tokio's async](https://tokio.rs/tokio/tutorial/async)
-  - some people find the `'static` lifetime bound on tokio tasks to be restrictive, or at least a bit tricky to use (though for writing an API the spawning is likely handled per-request by the framework so less of an issue):
+### Available Async Runtimes
+
+- [Tokio's async](https://tokio.rs/tokio/tutorial/async) - "A runtime for writing reliable network applications without compromising speed."
+  - [tokio crate docs](https://docs.rs/tokio/latest/tokio/)
+  - Tokio provides the [axum](https://github.com/tokio-rs/axum) web application framework
+  - Some people find the `'static` lifetime bound on tokio tasks to be restrictive, or at least a bit tricky to use (though for writing an API the spawning is likely handled per-request by the framework so less of an issue):
     - <https://tokio.rs/tokio/tutorial/spawning#static-bound>
     - <https://stackoverflow.com/questions/69955340/how-to-deal-with-tokiospawn-closure-required-to-be-static-and-self>
     - <https://github.com/tokio-rs/tokio/issues/2170>
@@ -76,7 +77,7 @@ Your choice may be affected by how you feel about macros - do you want to avoid 
 
 ### Templating engines
 
-One piece of the puzzle
+If you want/need to assemble a server from smaller crates...
 
 - [Askama](https://djc.github.io/askama/) - a template engine based on Jinja
   - [askama on lib.rs](https://lib.rs/crates/askama)
@@ -120,6 +121,7 @@ There are many others, I'm not even going to attempt a complete survey of js thi
 - [Rust Digger](https://rust-digger.code-maven.com/) via the [Rustacean Station Podcast - Rust Digger](https://rustacean-station.org/episode/gabor-szabo/)
 - [Rust web frameworks: development in 2023 ~ Yalantis](https://yalantis.com/blog/rust-web-frameworks/)
 - Old article on async - much has changed since: <https://bryangilbert.com/post/code/rust/adventures-futures-tokio-rust/>
+- Asking ["What's the current best practice for web dev in rust? on reddit"](https://www.reddit.com/r/rust/comments/17dt9bo/whats_the_current_best_practice_for_web_dev_in/) flushed out some good advice and things to check out.
 
 ## Thanks
 
