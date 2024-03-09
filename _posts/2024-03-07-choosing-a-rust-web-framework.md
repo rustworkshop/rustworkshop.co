@@ -46,22 +46,23 @@ Here's the main options for bringing the async features of the rust language to 
 
 #### Tokio
 
-[Tokio](https://docs.rs/tokio/latest/tokio/) is far more than an async runtime. It has many of the things you'll need to build a web API or host a dynamic server-rendered website. As such choosing Tokio for your async runtime implies a set of other choices (and vice versa if you choose other parts of the tokio stack, you'll likely use the tokio async runtime.)
+[Tokio](https://docs.rs/tokio/) is far more than an async runtime. It has many of the things you'll need to build a web API or host a dynamic server-rendered website. As such choosing Tokio for your async runtime implies a set of other choices (and vice versa if you choose other parts of the tokio stack, you'll likely use the tokio async runtime.)
 
 [Tokio's async](https://tokio.rs/tokio/tutorial/async) is "A runtime for writing reliable network applications without compromising speed."
 
   - Tokio also provides the [Axum](https://github.com/tokio-rs/axum) web application framework.
-  - There is a crate for bridging some of the incompatibility between tokio and "futures": [async_compat](https://docs.rs/async-compat/latest/async_compat/)
-  - Some people find the `'static` lifetime bound on tokio tasks to be restrictive, or at least a bit tricky to use (though for writing an API the spawning is likely handled per-request by the framework so less of an issue). Here's a flavour of that particular challenge:
+  - There is a crate for bridging some of the incompatibility between tokio and "futures": [async_compat](https://docs.rs/async-compat/)
+  - It was suggested to me that some people find the `'static` lifetime bound on tokio tasks to be restrictive, or at least a bit tricky to use (though for writing an API the spawning is likely handled per-request by the framework so less of an issue). It also is something that I understand might be not unique to tokio according to the reddit responses to this blog post. Here's a flavour of that particular challenge:
     - <https://tokio.rs/tokio/tutorial/spawning#static-bound>
     - <https://stackoverflow.com/questions/69955340/how-to-deal-with-tokiospawn-closure-required-to-be-static-and-self>
     - <https://github.com/tokio-rs/tokio/issues/2170>
     - <https://users.rust-lang.org/t/working-around-the-static-requirement-in-tokio-spawn-blocking/89831>
     - <https://users.rust-lang.org/t/satisfying-tokio-spawn-static-lifetime-requirement/78773>
+    - <https://without.boats/blog/the-scoped-task-trilemma/>
 
 #### Async-std
 
-[async-std](https://docs.rs/async-std/latest/async_std/) is an "Async version of the Rust standard library".
+[async-std](https://docs.rs/async-std/) is an "Async version of the Rust standard library".
 
 Perhaps better for smaller more focussed usages of async rather than "generic web development" where Tokio provides more out of the box.
 
@@ -71,11 +72,31 @@ Perhaps better for smaller more focussed usages of async rather than "generic we
 
 Made for use in embedded / low power devices with more constraints than your average cloud web host. If you're building something for the embedded space this is definitely one to check out.
 
+#### Hyper
+
+> "hyper is a fast and correct HTTP implementation"
+
+Hyper provides and http server, but not a lot of the rest of the things you'd need for a full backend web application such as routing and templating.
+
+- <https://hyper.rs/>
+- <https://docs.rs/hyper/>
+- <https://github.com/hyperium/hyper>
+
 #### Smol
 
 [Smol](https://github.com/smol-rs/smol) is declared to be "A small and fast async runtime."
 
 Seems worth a look if you want compactness over general applicability but doesn't appear to have the crate ecosystem that Tokio benefits from.
+
+#### Poem
+
+I don't know much about this one yet, but a couple of people on reddit suggested this was nice to work with on the reddit responses to this post.
+
+- <https://docs.rs/poem/>
+- <https://github.com/poem-web/poem>
+- <https://news.ycombinator.com/item?id=32800796>
+- <https://www.reddit.com/r/rust/comments/s0g9x9/thoughts_on_poem_axum/>
+- <https://tech.marksblogg.com/poem-rust-web-framework.html>
 
 #### Which to choose?
 
