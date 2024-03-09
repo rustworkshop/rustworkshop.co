@@ -2,6 +2,7 @@
 title: Rust Programming Books
 layout: post
 author: Tim Abell
+reddit: https://www.reddit.com/r/rust/comments/1basijw/rust_programming_books/
 ---
 
 A catalogue of books on the Rust programming language.
