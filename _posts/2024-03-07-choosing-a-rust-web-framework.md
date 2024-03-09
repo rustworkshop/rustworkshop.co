@@ -2,6 +2,7 @@
 title: Choosing a Rust web framework
 layout: post
 author: Tim Abell
+reddit: https://www.reddit.com/r/rust/comments/1b974xn/choosing_a_rust_web_framework/
 ---
 
 

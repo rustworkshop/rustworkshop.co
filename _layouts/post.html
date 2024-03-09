@@ -40,17 +40,17 @@ layout: blog
     <hr/>
     <div id="post_footer">
       <div>
+          {% if page.reddit %}
+              <a href='{{page.reddit}}' target='_blank'>Discuss on Reddit</a> ||
+          {% endif %}
           <a href='http://twitter.com/share?text=Read this: "{{ page.title | url_encode }}"&url={{site.url}}{{page.url}}'
-            target='_blank'>Share as Tweet</a>
+            target='_blank'>Tweet this</a>
           ||
           <a target='_blank'
             href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{ page.title }}">
           Share on LinkedIn</a>
-      </div>
-      <div>
-        <a href="https://github.com/rustworkshop/rustworkshop.co/tree/gh-pages/{{ page.path }}"
-                            target="_blank">Post source code on GitHub</a>
-        - suggestions &amp; PRs welcome!
+          ||
+          <a href="https://github.com/rustworkshop/rustworkshop.co/tree/gh-pages/{{ page.path }}" target="_blank">Source code</a>
       </div>
     </div>
   </article>
