@@ -148,4 +148,5 @@ For more detail on many aspects of Rust for the web and much more you might find
 
 ## Thanks
 
-Many thanks to David Haig for early review and significant contributions to this article.
+- Many thanks to David Haig for early review and significant contributions to this article.
+- Many thanks to those on Reddit who responded with things I'd missed out.
