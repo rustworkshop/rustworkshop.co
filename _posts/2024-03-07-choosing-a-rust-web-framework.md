@@ -72,31 +72,11 @@ Perhaps better for smaller more focussed usages of async rather than "generic we
 
 Made for use in embedded / low power devices with more constraints than your average cloud web host. If you're building something for the embedded space this is definitely one to check out.
 
-#### Hyper
-
-> "hyper is a fast and correct HTTP implementation"
-
-Hyper provides and http server, but not a lot of the rest of the things you'd need for a full backend web application such as routing and templating.
-
-- <https://hyper.rs/>
-- <https://docs.rs/hyper/>
-- <https://github.com/hyperium/hyper>
-
 #### Smol
 
 [Smol](https://github.com/smol-rs/smol) is declared to be "A small and fast async runtime."
 
 Seems worth a look if you want compactness over general applicability but doesn't appear to have the crate ecosystem that Tokio benefits from.
-
-#### Poem
-
-I don't know much about this one yet, but a couple of people on reddit suggested this was nice to work with on the reddit responses to this post.
-
-- <https://docs.rs/poem/>
-- <https://github.com/poem-web/poem>
-- <https://news.ycombinator.com/item?id=32800796>
-- <https://www.reddit.com/r/rust/comments/s0g9x9/thoughts_on_poem_axum/>
-- <https://tech.marksblogg.com/poem-rust-web-framework.html>
 
 #### Which to choose?
 
@@ -108,25 +88,76 @@ Now that we've looked at the async runtimes and how it affects the rest of your 
 
 Here's the biggest frameworks / crates out there for doing server-side (aka backend) web development for both APIs and server-rendered html.
 
-- [Axum by tokio](https://github.com/tokio-rs/axum) - recommended, part of tokio (the async framework of choice) - focus on a macro free API which simplifies error handling and debugging
-  - [axum on lib.rs](https://lib.rs/crates/axum)
-- [Actix](https://actix.rs/) - uses macros for routing API and the actor pattern for internal communication. Considered fast.
-  - [actix on lib.rs](https://lib.rs/crates/actix)
-  - [Rustacean Station: Kraken's migration to Rust microservices, with Rob Ede](https://rustacean-station.org/episode/rob-ede-kraken/)
-- [Rocket](https://rocket.rs/) - inconsistent development & releases, but otherwise good and solid according to blessed.rs. Uses macros to routing API and general web boilerplate. A popular choice if you don't mind some magic happening behind the scenes. 
-  - [rocket on lib.rs](https://lib.rs/crates/rocket)
-- [Salvo](https://salvo.rs/)
-  - [PR for adding salvo to blessed.rs](https://github.com/nicoburns/blessed-rs/pull/81/files)
-  - [Salvo on lib.rs](https://lib.rs/crates/salvo)
-- [Warp](https://crates.io/crates/warp)
-  - [Warp on lib.rs](https://lib.rs/crates/warp)
-  - <https://blog.logrocket.com/building-rest-api-rust-warp/>
-  - Built on top of [hyper.rs](https://hyper.rs/)
-    - Which is built on tokio (so uses tokio-async)
-- [Tide](https://github.com/http-rs/tide)
-  - [Tide on lib.rs](https://lib.rs/crates/tide)
+### Available web frameworks
+
+#### Axum
+
+[Axum by tokio](https://github.com/tokio-rs/axum) - recommended, part of tokio (the async framework of choice) - focus on a macro free API which simplifies error handling and debugging
+
+- [axum on lib.rs](https://lib.rs/crates/axum)
+
+#### Actix
+
+[Actix](https://actix.rs/) - uses macros for routing API and the actor pattern for internal communication. Considered fast.
+
+- [actix on lib.rs](https://lib.rs/crates/actix)
+- [Rustacean Station: Kraken's migration to Rust microservices, with Rob Ede](https://rustacean-station.org/episode/rob-ede-kraken/)
+
+#### Rocket
+
+[Rocket](https://rocket.rs/) - inconsistent development & releases, but otherwise good and solid according to blessed.rs. Uses macros to routing API and general web boilerplate. A popular choice if you don't mind some magic happening behind the scenes. 
+
+- [rocket on lib.rs](https://lib.rs/crates/rocket)
+
+#### Salvo
+
+[Salvo](https://salvo.rs/) "A powerful and simple Rust web server framework"
+
+- [PR for adding salvo to blessed.rs](https://github.com/nicoburns/blessed-rs/pull/81/files)
+- [Salvo on lib.rs](https://lib.rs/crates/salvo)
+
+#### Warp
+
+[Warp](https://crates.io/crates/warp) "A super-easy, composable, web server framework for warp speeds."
+
+- [Warp on lib.rs](https://lib.rs/crates/warp)
+- <https://blog.logrocket.com/building-rest-api-rust-warp/>
+- Built on top of [hyper.rs](https://hyper.rs/)
+  - Which is built on tokio (so uses tokio-async)
+
+#### Tide
+
+[Tide](https://github.com/http-rs/tide) "a minimal and pragmatic Rust web application framework built for rapid development. It comes with a robust set of features that make building async web applications and APIs easier and more fun"
+
+- [Tide on lib.rs](https://lib.rs/crates/tide)
+
+#### Poem
+
+>  "Poem is a full-featured and easy-to-use web framework"
+
+I don't know much about this one yet, but a couple of people on reddit suggested this was nice to work with on the reddit responses to this post.
+
+- <https://docs.rs/poem/>
+- <https://github.com/poem-web/poem>
+- <https://news.ycombinator.com/item?id=32800796>
+- <https://www.reddit.com/r/rust/comments/s0g9x9/thoughts_on_poem_axum/>
+- <https://tech.marksblogg.com/poem-rust-web-framework.html>
+
+#### Hyper
+
+> "hyper is a fast and correct HTTP implementation"
+
+Hyper provides and http server, but not a lot of the rest of the things you'd need for a full backend web application such as routing and templating.
+
+- <https://hyper.rs/>
+- <https://docs.rs/hyper/>
+- <https://github.com/hyperium/hyper>
+
+### Macros
 
 Your choice may be affected by how you feel about macros - do you want to avoid magic and trickier error messages that you may get with a macro based framework, or are you happy to just write your business logic and leave all that to the framework.
+
+### Where to start
 
 For "generic" backend web development it's looks like Tokio is again a good default option.
 
