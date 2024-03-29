@@ -153,6 +153,15 @@ Hyper provides and http server, but not a lot of the rest of the things you'd ne
 - <https://docs.rs/hyper/>
 - <https://github.com/hyperium/hyper>
 
+#### Pavex
+
+- <https://github.com/LukeMathWalker/pavex>
+- <https://pavex.dev/>
+
+Currently in closed-access beta, this is an interesting looking new thing that promises to provide far better developer experience in the domain of backend web systems. Notably because of the pre-compilation parsing that allows it to provide programming error information to the programmer that explains the actual problem is within the context of backend development rather than some mysterious type/trait error. It also has a pretty clean design for describing your particular service.
+
+You can [watch Luca introduce and demonstrate Pavex at Rust Nation 2024](https://www.youtube.com/live/6mZRWFQRvmw?feature=shared&t=8488).
+
 ### Macros
 
 Your choice may be affected by how you feel about macros - do you want to avoid magic and trickier error messages that you may get with a macro based framework, or are you happy to just write your business logic and leave all that to the framework.
