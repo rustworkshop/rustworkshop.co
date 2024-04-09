@@ -95,3 +95,7 @@ I was about to buy a book on Rust, then I wondered what other books there were, 
 - [Practical System Programming for Rust Developers](https://www.amazon.co.uk/Practical-System-Programming-Rust-Developers/dp/1800560966) by Prabhu Eshwarla
 - [Speed Up Your Python with Rust](https://www.amazon.co.uk/Speed-Your-Python-Rust-performance-ebook/dp/B09LVL1T1Y) by Maxwell Flitton
 - [Statistics with Rust](https://www.amazon.co.uk/Statistics-Rust-Statistical-Techniques-Action/dp/811917710X) by Keiko Nakamura
+
+## Where to find more books
+
+- [github.com/sger/RustBooks](https://github.com/sger/RustBooks)
