@@ -44,6 +44,10 @@ Grab a drink, join us at our table, introduce yourself and chat about all things
 
 We'll do a quick round of 5 minute show and tell slots at around 7pm around a laptop so anyone can share what they've been working on. Bring your laptop if you wish.
 
+## Stay in touch
+
+Discussions for this group are in the [rust workshop discord](https://discord.gg/n65ZdtVZeE){:target="_blank"}, in the `#reading-rust-meetup` channel. Come and say hi if you're coming along.
+
 ## T&Cs
 
 Attendance is subject to out [code of conduct](/policies/conduct)
