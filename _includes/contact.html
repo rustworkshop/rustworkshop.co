@@ -3,9 +3,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Us</h2>
-                    <p class="section-subheading text-inverted">Let's keep it simple.<br>Everyone hates contact web forms, so<br>here's an old-fashioned <code>mailto:</code> link button:</p>
-                    <div><a href="mailto:{{ site.email }}" class="btn btn-xl"><span class="far fa-envelope"></span>
-                        Send us an email</a></div>
+                    <div><a href="mailto:{{ site.email }}" class="btn btn-xl"><span class="fa-solid fa-envelope"></span>
+                        {{ site.email }}</a></div>
+                    <div><a href="tel:{{ site.phone }}" class="btn btn-xl"><span class="fa-solid fa-phone"></span>
+                        Phone {{ site.phone }}</a></div>
                 </div>
             </div>
         </div>
