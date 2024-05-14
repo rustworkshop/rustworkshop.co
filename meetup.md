@@ -14,6 +14,8 @@ Second Tuesday of every month
 
 [Reading Biscuit Factory Community Hub](https://www.readingbiscuitfactory.co.uk/about-us){:target="_blank"}, upstairs in the open area.
 
+[![photo of biscuit factory from street](/img/IMG_20240514_174117-biscuit-factory.jpg) {:height="400px"}](/img/IMG_20240514_174117-biscuit-factory.jpg){:target="_blank"}
+
 <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.9789875149726869%2C51.45344865942741%2C-0.9759673476219178%2C51.456849870989394&amp;layer=mapnik&amp;marker=51.455149296885985%2C-0.9774774312973022" style="border: 1px solid black"></iframe>
 
 [Reading Biscuit Factory on OpenStreetMap](https://www.openstreetmap.org/?mlat=51.45515&amp;mlon=-0.97748#map=19/51.45515/-0.97748){:target="_blank"}
