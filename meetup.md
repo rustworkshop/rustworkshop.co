@@ -8,7 +8,7 @@ Individual events are listed on meetup.com: [Reading Rust Workshop on Meetup](ht
 
 ## When
 
-Second Tuesday of every month
+Second Wednesday of every month
 
 ## Where
 
