@@ -40,7 +40,7 @@ people:
 
 external_urls:
   discord: https://discord.gg/n65ZdtVZeE
-  mailing_list: https://buttondown.email/rust_workshop
+  mailing_list: /mailing-list
   podcast: https://feeds.transistor.fm/the-rust-workshop-podcast
 
 # Postal address (add as many lines as necessary)
