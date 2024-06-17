@@ -50,6 +50,8 @@ We'll do a quick round of 5 minute show and tell slots at around 7pm around a la
 
 Discussions for this group are in the [rust workshop discord]({{ site.external_urls.discord }}){:target="_blank"}, in the `#reading-rust-meetup` channel. Come and say hi if you're coming along.
 
+To be reminded of upcoming meetups, plus blog articles and other messages from the Rust Workshop sign up to the [mailing list]({{ site.external_urls.mailing_list }}).
+
 ## T&Cs
 
 Attendance is subject to out [code of conduct](/policies/conduct)
