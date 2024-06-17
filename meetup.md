@@ -48,7 +48,7 @@ We'll do a quick round of 5 minute show and tell slots at around 7pm around a la
 
 ## Stay in touch
 
-Discussions for this group are in the [rust workshop discord](https://discord.gg/n65ZdtVZeE){:target="_blank"}, in the `#reading-rust-meetup` channel. Come and say hi if you're coming along.
+Discussions for this group are in the [rust workshop discord]({{ site.external_urls.discord }}){:target="_blank"}, in the `#reading-rust-meetup` channel. Come and say hi if you're coming along.
 
 ## T&Cs
 

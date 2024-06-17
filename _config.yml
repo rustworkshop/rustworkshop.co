@@ -38,6 +38,11 @@ people:
 #  - title: github
 #    url: https://github.com/rustworkshop
 
+external_urls:
+  discord: https://discord.gg/n65ZdtVZeE
+  mailing_list: https://buttondown.email/rust_workshop
+  podcast: https://feeds.transistor.fm/the-rust-workshop-podcast
+
 # Postal address (add as many lines as necessary)
 address:
   - line: Apollo House Hallam Way, Whitehills Business Park, Blackpool, FY4 5FS
