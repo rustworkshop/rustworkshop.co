@@ -4,9 +4,11 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact</h2>
                     <div><a href="mailto:{{ site.email }}" class="btn btn-xl"><span class="fa-solid fa-envelope"></span>
-                        {{ site.email }}</a></div>
+                        &nbsp;{{ site.email }}</a></div>
                     <div><a href="tel:{{ site.phone }}" class="btn btn-xl"><span class="fa-solid fa-phone"></span>
-                        Phone {{ site.phone }}</a></div>
+                        &nbsp;{{ site.phone }}</a></div>
+                    <div><a href="{{ site.external_urls.book_call }}" class="btn btn-xl" target="_blank"><span class="fa-solid fa-calendar"></span>
+                        &nbsp;Book a call</a></div>
                 </div>
             </div>
         </div>

@@ -42,6 +42,7 @@ external_urls:
   discord: https://discord.gg/n65ZdtVZeE
   mailing_list: /mailing-list
   podcast: https://feeds.transistor.fm/the-rust-workshop-podcast
+  book_call: https://savvycal.com/tim-abell/chat
 
 # Postal address (add as many lines as necessary)
 address:
