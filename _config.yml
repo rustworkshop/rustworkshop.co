@@ -43,6 +43,7 @@ external_urls:
   mailing_list: /mailing-list
   podcast: https://feeds.transistor.fm/the-rust-workshop-podcast
   book_call: https://savvycal.com/tim-abell/chat
+  github: https://github.com/rustworkshop/
 
 # Postal address (add as many lines as necessary)
 address:
