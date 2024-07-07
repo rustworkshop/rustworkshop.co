@@ -42,3 +42,5 @@ I took the default suggestion and signed up with <https://element.io/> using the
 - The London meetup: <https://www.meetup.com/rust-london-user-group/>
 - Our [very own meetup in Reading](/meetup)
 - Rust Nation, the UK Rust conference: <https://www.rustnationuk.com/>
+- [Rust meetups by size](https://www.meetup.com/topics/rust/gb/)
+- [All rust meetups on meetup.com](https://www.meetup.com/topics/rust/all/)
