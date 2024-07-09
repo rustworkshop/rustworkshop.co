@@ -16,6 +16,7 @@ I was about to buy a book on Rust, then I wondered what other books there were, 
 - [Beginning Rust](https://www.amazon.co.uk/Beginning-Rust-Get-Started-2021/dp/1484272072) by Carlo Milanesi
 - [Best Practices of Rust Programming Language](https://www.amazon.co.uk/Best-Practices-Rust-Programming-Language/dp/B089M434VZ) by Pawan Bisht
 - [Creative Projects for Rust Programmers](https://www.amazon.co.uk/Creative-Projects-Rust-Programmers-WebAssembly/dp/1789346223) by Carlo Milanesi
+- [Effective Rust](https://www.amazon.co.uk/Effective-Rust-Specific-Ways-Improve/dp/1098151402) by David Drysdale
 - [Introduction to Rust](https://www.amazon.co.uk/Introduction-Rust-Performant-Language-Programming-ebook/dp/B0BYXHS41Q) by David Li
 - [Learn Rust Programming](https://www.amazon.co.uk/Learn-Rust-Programming-Supports-Ecosystem/dp/935551154X) by Claus Matzinger
 - [Learn all about Rust Programming](https://www.amazon.co.uk/Learn-all-about-Rust-Programming/dp/B0C6BFKFMS) by Innoware PJP
