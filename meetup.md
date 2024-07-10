@@ -34,12 +34,6 @@ Nearest car park is the "Broad Street Mall" car park that's on top of the same b
 
 It's also a short walk from the Oracle Riverside car park, and Q-Park Chatham Place car park.
 
-## Facilities
-
-Coffee shop downstairs open till 8pm
-
-Bar and food available from venue.
-
 ## Agenda
 
 Grab a drink, join us at our table, introduce yourself and chat about all things Rust
@@ -51,6 +45,18 @@ We'll do a quick round of 5 minute show and tell slots at around 7pm around a la
 Discussions for this group are in the [rust workshop discord]({{ site.external_urls.discord }}){:target="_blank"}, in the `#reading-rust-meetup` channel. Come and say hi if you're coming along.
 
 To be reminded of upcoming meetups, plus blog articles and other messages from the Rust Workshop sign up to the [mailing list]({{ site.external_urls.mailing_list }}).
+
+## Facilities - food/drink
+
+Coffee shop downstairs open till 8pm (bring a reusable cup).
+
+Some bar/cinema style snacks available from venue.
+
+"Sarv's slice" pizza bar serves tasty pizzas. Last orders 9:15pm.
+
+## Wifi
+
+Join "RBF Public" wifi and use password from bar receipt.
 
 ## T&Cs
 
