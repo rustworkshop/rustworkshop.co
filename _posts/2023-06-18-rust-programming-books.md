@@ -59,6 +59,8 @@ I was about to buy a book on Rust, then I wondered what other books there were, 
 - [Rust Brain Teasers: Exercise Your Mind](https://www.amazon.co.uk/Rust-Brain-Teasers-Pragmatic-Programmers/dp/1680509179) by Herbert Wolverson
 - [Rust High Performance](https://www.amazon.co.uk/Rust-High-Performance-performance-applications/dp/178839948X) by Iban Eguia Moraza
 - [Rust for Rustaceans: Idiomatic Programming for Experienced Developers](https://www.amazon.co.uk/Rust-Rustaceans-Programming-Experienced-Developers/dp/1718501854) by Jon Gjengset
+- [Write Powerful Rust Macros](https://www.manning.com/books/write-powerful-rust-macros) by Sam Van Overmeire
+	 - [Rustacean Station Podcast interview with Sam](https://rustacean-station.org/episode/sam-van-overmeire/)
 
 ## Web / API / Microservices
 
