@@ -24,7 +24,14 @@ As I've joined the UK rust community it's not been super-clear to me how to join
 
 ## Social
 
-- Follow relevant people and orgs on twitter. I've made a list here: <https://twitter.com/i/lists/1651516734552121344/members>
+- Twitter:
+    - Follow relevant people and orgs on twitter. I've made a list here: [Twitter RustLang List](https://twitter.com/i/lists/1651516734552121344)
+    - And of course the hashtags are good for seeing who's active in rust on twitter: [Twitter #RustLang hashtag search]()
+- BlueSky:
+    - I've made a starter pack here: [Bluesky RustLang Starter Pack](https://bsky.app/starter-pack/0x5.uk/3lbyqacshbv25)
+    - See what's being tagged with the [BlueSky #RustLang hashtag search](https://bsky.app/hashtag/rustlang)
+
+Suggestions for improvements to these lists welcome.
 
 ## Matrix
 
