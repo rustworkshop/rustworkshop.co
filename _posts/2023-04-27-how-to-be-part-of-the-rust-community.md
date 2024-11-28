@@ -15,6 +15,7 @@ As I've joined the UK rust community it's not been super-clear to me how to join
 - `#general` chat on [The Official Rust Zulip](https://rust-lang.zulipchat.com/#narrow/stream/122651-general)
 - [reddit /r/rust](https://www.reddit.com/r/rust/) - though note [the announcement intending to get off reddit](https://web.archive.org/web/20230612040007/https://old.reddit.com/r/rust/comments/146y5y1/announcement_rrust_will_be_joining_the_blackout/)
 - [Awesome Rust Mentors](https://rustbeginners.github.io/awesome-rust-mentors/) - give and receive help with rust
+- [Women in Rust online meetup](https://www.meetup.com/women-in-rust/)
 
 ## Discord
 
