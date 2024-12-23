@@ -147,7 +147,7 @@ I don't know much about this one yet, but a couple of people on reddit suggested
 
 > "hyper is a fast and correct HTTP implementation"
 
-Hyper provides and http server, but not a lot of the rest of the things you'd need for a full backend web application such as routing and templating.
+Hyper provides an http server, but not a lot of the rest of the things you'd need for a full backend web application such as routing and templating.
 
 - <https://hyper.rs/>
 - <https://docs.rs/hyper/>
