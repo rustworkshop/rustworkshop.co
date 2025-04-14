@@ -176,7 +176,8 @@ For more detail on many aspects of Rust for the web and much more you might find
 
 ## Further Resources
 
-- [The Rust Workshop survey of the available Rust books](/2023/06/18/rust-programming-books/)- [blessed.rs has a curated crate list](https://blessed.rs/crates#section-networking-subsection-http-foundations)
+- [The Rust Workshop survey of the available Rust books](/2023/06/18/rust-programming-books/)
+- [blessed.rs has a curated crate list](https://blessed.rs/crates#section-networking-subsection-http-foundations)
 - [lib.rs](https://lib.rs/crates) has useful stats on it, e.g. [the rocket crate page](https://lib.rs/crates/rocket) shows it's #5 (presumably by downloads)
   - "*Lightweight, opinionated, curated, unofficial alternative to crates.io*".
   - it has a [list of http crates](https://lib.rs/web-programming/http-server) - the top four are axum, actix, warp and rocket
