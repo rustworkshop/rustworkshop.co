@@ -60,6 +60,7 @@ Some of these haven't added episodes in a while but the existing episodes are wo
 - [Are We Podcast Yet](https://arewepodcastyet.com/)
 - [Building with Rust](https://podcasts.apple.com/gb/podcast/building-with-rust/id1553513574)
 - [Chats with James](https://jamesmunns.com/podcast/)
+- [Compose](https://timclicks.dev/compose-podcast)
 - [New Rustacean](https://newrustacean.com/)
 - [On The Metal](https://onthemetal.transistor.fm/)
 - [Oxide and Friends](https://oxide-and-friends.transistor.fm/)
@@ -69,5 +70,9 @@ Some of these haven't added episodes in a while but the existing episodes are wo
 - [RustShip](https://podcasts.apple.com/gb/podcast/rustship-a-rustlang-podcast/id1700278455)
 - [Rustacean Station](https://rustacean-station.org/)
 - [Self-Directed Research](https://sdr-podcast.com/)
+
+Other podcasts with occasional Rust episodes:
+
+- [Developer Voices](https://podcasts.apple.com/us/podcast/developer-voices/id1687271887)
 
 <https://www.reddit.com/r/rust/comments/12ow4a0/podcast_recommendations/>
