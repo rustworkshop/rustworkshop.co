@@ -45,10 +45,29 @@ The rust embedded team hang out on matrix and you can find them here:
 
 I took the default suggestion and signed up with <https://element.io/> using the web client.
 
-## IRL Meetup
+## In-person meetup
 
 - The London meetup: <https://www.meetup.com/rust-london-user-group/>
-- Our [very own meetup in Reading](/meetup)
+- Our [very own meetup in Reading, UK](/meetup)
 - Rust Nation, the UK Rust conference: <https://www.rustnationuk.com/>
 - [Rust meetups by size](https://www.meetup.com/topics/rust/gb/)
 - [All rust meetups on meetup.com](https://www.meetup.com/topics/rust/all/)
+
+## Podcasts
+
+Some of these haven't added episodes in a while but the existing episodes are worth a listen. Some cover more than rust but have enough rust to be worth mentioning here. Some are also available on youtube.
+
+- [Are We Podcast Yet](https://arewepodcastyet.com/)
+- [Building with Rust](https://podcasts.apple.com/gb/podcast/building-with-rust/id1553513574)
+- [Chats with James](https://jamesmunns.com/podcast/)
+- [New Rustacean](https://newrustacean.com/)
+- [On The Metal](https://onthemetal.transistor.fm/)
+- [Oxide and Friends](https://oxide-and-friends.transistor.fm/)
+- [Rust Game Dev](https://rustgamedev.com/episodes)
+- [Rust Workshop](https://feeds.transistor.fm/the-rust-workshop-podcast)
+- [Rust in Production](https://corrode.dev/podcast/)
+- [RustShip](https://podcasts.apple.com/gb/podcast/rustship-a-rustlang-podcast/id1700278455)
+- [Rustacean Station](https://rustacean-station.org/)
+- [Self-Directed Research](https://sdr-podcast.com/)
+
+<https://www.reddit.com/r/rust/comments/12ow4a0/podcast_recommendations/>
