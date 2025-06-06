@@ -174,6 +174,7 @@ These are the existing CLI tools that demonstrate some of the preferred approach
   - a unix style tool that has no arguments, it just takes a stream of text on stdin (file paths) and transforms it to a different stream of text on stdout (html)
   - no clap needed, because it doesn't need any params, it just flows data - a reminder that a one-size template wouldn't be a perfect fit for everything
 
-## Related
+## Related templates
 
-- [rust-github/template](https://github.com/rust-github/template) - not a CLI template, but showcases some github setup that could be useful for a CLI
+- [rust-github/template](https://github.com/rust-github/template) - rust github config template
+- [epage/_rust](https://github.com/epage/_rust) - generic rust template
