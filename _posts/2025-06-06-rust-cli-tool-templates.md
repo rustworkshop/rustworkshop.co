@@ -26,7 +26,6 @@ Whether you're going to create your own CLI from scratch or you want a ready-to-
     - lint, codecov, test, audit
     - issue template
     - contributions
-  - Also available as [rust-starter/rust-starter-generate](https://github.com/rust-starter/rust-starter-generate) cargo-generate template
   - gitignore
   - cargo graph png/dot
   - docker
@@ -36,6 +35,7 @@ Whether you're going to create your own CLI from scratch or you want a ready-to-
     - clap commands for config, completion, error, hazard
   - cargo dev/release etc profile config
   - Why I like this one: incredibly complete
+  - Also available as [rust-starter/rust-starter-generate](https://github.com/rust-starter/rust-starter-generate) cargo-generate template but the template is significantly behind the main repo (last commit Nov 2020)
 - [rusty-ferris-club/rust-starter](https://github.com/rusty-ferris-club/rust-starter)
   - Last commit: Dec 2023
   - Apache 2 license
