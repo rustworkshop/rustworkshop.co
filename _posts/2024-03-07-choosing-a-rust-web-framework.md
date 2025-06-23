@@ -186,6 +186,7 @@ For more detail on many aspects of Rust for the web and much more you might find
 - [Rust web frameworks: development in 2023 ~ Yalantis](https://yalantis.com/blog/rust-web-frameworks/)
 - Old article on async - much has changed since: <https://bryangilbert.com/post/code/rust/adventures-futures-tokio-rust/>
 - Asking ["What's the current best practice for web dev in Rust? on reddit"](https://www.reddit.com/r/rust/comments/17dt9bo/whats_the_current_best_practice_for_web_dev_in/) flushed out some good advice and things to check out.
+- [LogRocket: "Exploring the top Rust web frameworks"](https://blog.logrocket.com/top-rust-web-frameworks/)
 
 ## Thanks
 
