@@ -1,3 +1,3 @@
 ---
-redirect_to: https://meetings-eu1.hubspot.com/tim-abell
+redirect_to: https://0x5.uk/meet/
 ---
