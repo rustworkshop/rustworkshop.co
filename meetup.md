@@ -52,7 +52,7 @@ Coffee shop downstairs open till 8pm (bring a reusable cup).
 
 Some bar/cinema style snacks available from venue.
 
-"Sarv's slice" pizza bar serves tasty pizzas. Last orders 9:15pm.
+~~"Sarv's slice" pizza bar serves tasty pizzas. Last orders 9:15pm.~~ closed awaiting new caterer so we're down to popcorn and sweets 😭, so best eat before you come. Subway & Kokoro are nearby options.
 
 ## Wifi
 
